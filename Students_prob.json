@@ -1,51 +1,66 @@
 [
   {
-    "name": "Иван",
+    "birth_day": "12.07.1998",
     "middle_name": "Игоревич",
-    "surname": "Иванов",
-    "school": "67 школа",
     "class": "5 А",
-    "birth_day": "12.07.1998"
+    "surname": "Иванов",
+    "name": "Иван",
+    "school": "67 школа"
   },
   {
-    "name": "Александр",
+    "birth_day": "01.12.1997",
     "middle_name": "Петрович",
+    "class": "6 А",
     "surname": "Красный",
-    "school": "12 гимназия",
-    "class": "6 А",
-    "birth_day": "01.12.1997"
-  },
-  {
-    "name": "Матвей",
-    "middle_name": "Степанович",
-    "surname": "Петров",
-    "school": "12 гимназия",
-    "class": "6 А",
-    "birth_day": "10.02.1997"
-  },
-  {
-    "name": "Артем",
-    "middle_name": "Валерьевич",
-    "surname": "Кузин",
-    "school": "12 гимназия",
-    "class": "7 Г",
-    "birth_day": "10.02.1995"
-  },
-  {
-    "name": "Петр",
-    "middle_name": "Исаакович",
-    "surname": "Рузенштерн",
-    "school": "12 гимназия",
-    "class": "6 Г",
-    "birth_day": "21.05.1996"
-  },
-  {
     "name": "Александр",
+    "school": "12 гимназия"
+  },
+  {
+    "birth_day": "10.02.1997",
+    "middle_name": "Степанович",
+    "class": "6 А",
+    "surname": "Петров",
+    "name": "Матвей",
+    "school": "12 гимназия"
+  },
+  {
+    "birth_day": "10.02.1995",
     "middle_name": "Валерьевич",
+    "class": "7 Г",
     "surname": "Кузин",
-    "school": "12 гимназия",
+    "name": "Артем",
+    "school": "12 гимназия"
+  },
+  {
+    "birth_day": "21.05.1996",
+    "middle_name": "Исаакович",
+    "class": "6 Г",
+    "surname": "Рузенштерн",
+    "name": "Петр",
+    "school": "12 гимназия"
+  },
+  {
+    "birth_day": "21.05.1994",
+    "middle_name": "Валерьевич",
     "class": "8 Д",
-    "birth_day": "21.05.1994"
+    "surname": "Кузин",
+    "name": "Александр",
+    "school": "12 гимназия"
+  },
+  {
+    "birth_day": "01.12.1996",
+    "middle_name": "Петрович",
+    "class": "7 А",
+    "surname": "Красный",
+    "name": "Василий",
+    "school": "12 гимназия"
+  },
+  {
+    "birth_day": "01.12.1996",
+    "middle_name": "Петрович",
+    "class": "7 А",
+    "surname": "Красный",
+    "name": "Василий",
+    "school": "12 гимназия"
   }
-  ]
-
+]
