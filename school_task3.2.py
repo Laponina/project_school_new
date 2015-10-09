@@ -8,14 +8,14 @@ f = open('Teachers.json', 'r+', encoding='UTF-8')
 teachers = json.load(f)
 f.close()
 new_teacher =   {
-                "name": "Георгий",
-                "middle_name": "Константинович",
-                "surname": "Иванов",
-                "school": "49 школа",
+                "name": "Григорий",
+                "middle_name": "Борисович",
+                "surname": "Терентьев",
+                "school": "10 гимназия",
                 "class": [
                 "9 А",
-                "10 Б",
-                "11 В"
+                "9 Б",
+                "9 Д"
                 ],
                 "birth_day": "04.07.1988"
                 }
