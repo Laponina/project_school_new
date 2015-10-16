@@ -3,8 +3,8 @@
 
 import json
 
-f1 = open('Teachers.json', encoding='UTF-8')
-f2 = open('Students.json', encoding='UTF-8')
+f1 = open('Teachers_id.json', encoding='UTF-8')
+f2 = open('Students_id.json', encoding='UTF-8')
 
 teachers = json.load(f1)
 students = json.load(f2)

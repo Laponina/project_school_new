@@ -1,7 +1,7 @@
 # Добавьте возможность удалять указанные классы у указанного преподавателя
 import json
 
-f = open('Teachers.json', 'r+', encoding='UTF-8')
+f = open('Teachers_id.json', 'r+', encoding='UTF-8')
 teachers = json.load(f)
 f.close()
 
@@ -14,7 +14,7 @@ for teacher in teachers:
             if form ==el:
                 teacher['class'].remove(el)
 
-f = open('Teachers.json', 'w', encoding='UTF-8')
+f = open('Teachers_id.json', 'w', encoding='UTF-8')
 
 f.write(json.dumps(teachers, ensure_ascii=False) + '\n')
 f.close()

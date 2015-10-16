@@ -2,10 +2,14 @@
 #Добавьте 5 новых учеников
 import json
 
-f = open('Students.json', 'r+', encoding='UTF-8')
+f = open('Students_id.json', 'r+', encoding='UTF-8')
 students = json.load(f)
 f.close()
+
+id = students[len(students)-1]['id']
+
 new_student = {
+    "id":id+1,
     "name": "Георгий",
     "middle_name": "Борисович",
     "surname": "Рылеев",
@@ -14,7 +18,7 @@ new_student = {
     "birth_day": "01.12.1996"
 }
 students.append(new_student)
-f = open('Students.json', 'w', encoding='UTF-8')
+f = open('Students_id.json', 'w', encoding='UTF-8')
 f.write(json.dumps(students, ensure_ascii=False) + '\n')
 
 f.close()
