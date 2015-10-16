@@ -1,9 +1,9 @@
 # Аналогично сделайте удаление учителя по полному имени(Ф.И.О.)
 import json
 
-f = open('Teachers_id.json', 'r+', encoding='UTF-8')
-teachers = json.load(f)
-f.close()
+with open('Teachers_id.json', 'r+', encoding='UTF-8') as f:
+    teachers = json.load(f)
+pass
 
 teacher = 'Иванов Георгий Константинович'
 
@@ -12,7 +12,6 @@ for el in teachers:
         el.clear()
         teachers.remove(el)
 
-f = open('Teachers_id.json', 'w', encoding='UTF-8')
-f.write(json.dumps(teachers, ensure_ascii=False) + '\n')
-
-f.close()
+with open('Teachers_id.json', 'w', encoding='UTF-8') as f:
+    f.write(json.dumps(teachers, ensure_ascii=False) + '\n')
+pass

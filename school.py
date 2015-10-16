@@ -6,12 +6,13 @@
 #
 
 import json
+with open('Teachers.json', encoding='UTF-8') as f1:
+    data = json.load(f1) #teachers
+pass
+with open('Students.json', encoding='UTF-8') as f2:
+        a = json.load(f2) #students
+pass
 
-f1 = open('Teachers.json', encoding='UTF-8')
-f2 = open('Students.json', encoding='UTF-8')
-
-data = json.load(f1) #teachers
-a = json.load(f2) #students
 
 name_students = []
 name_teachers = []

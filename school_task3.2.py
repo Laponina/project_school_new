@@ -4,9 +4,9 @@
 
 import json
 
-f = open('Teachers_id.json', 'r+', encoding='UTF-8')
-teachers = json.load(f)
-f.close()
+with open('Teachers_id.json', 'r+', encoding='UTF-8') as f:
+    teachers = json.load(f)
+pass
 
 id = teachers[len(teachers)-1]['id']
 
@@ -24,7 +24,6 @@ new_teacher =   {
                 "birth_day": "04.07.1988"
                 }
 teachers.append(new_teacher)
-f = open('Teachers_id.json', 'w', encoding='UTF-8')
-f.write(json.dumps(teachers, ensure_ascii=False)+'\n')
-
-f.close()
+with  open('Teachers_id.json', 'w', encoding='UTF-8') as f:
+    f.write(json.dumps(teachers, ensure_ascii=False)+'\n')
+pass

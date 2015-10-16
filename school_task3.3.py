@@ -2,17 +2,17 @@
 
 import json
 
-f = open('Teachers_id.json', 'r+', encoding='UTF-8')
-teachers = json.load(f)
-f.close()
+with open('Teachers_id.json', 'r+', encoding='UTF-8') as f:
+    teachers = json.load(f)
+pass
 
 teacher = 'Владимир Сергеевич'
-form = '10 Г'
+form = '11 Г'
 
 for el in teachers:
     if "%s %s" % (el["name"], el["middle_name"]) == teacher:
         el["class"].append(form)
-f = open('Teachers_id.json', 'w', encoding='UTF-8')
-f.write(json.dumps(teachers, ensure_ascii=False) + '\n')
 
-f.close()
+with open('Teachers_id.json', 'w', encoding='UTF-8') as f:
+    f.write(json.dumps(teachers, ensure_ascii=False) + '\n')
+pass

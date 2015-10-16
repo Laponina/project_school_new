@@ -4,9 +4,9 @@
 
 import json
 
-f = open('Students_id.json', 'r+', encoding='UTF-8')
-students = json.load(f)
-f.close()
+with open('Students_id.json', 'r+', encoding='UTF-8') as f:
+    students = json.load(f)
+pass
 
 surname = "Иванов"
 id = []

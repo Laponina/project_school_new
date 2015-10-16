@@ -3,11 +3,12 @@
 
 import json
 
-f1 = open('Teachers_id.json', encoding='UTF-8')
-f2 = open('Students_id.json', encoding='UTF-8')
-
-teachers = json.load(f1)
-students = json.load(f2)
+with open('Teachers_id.json', encoding='UTF-8') as f1:
+    teachers = json.load(f1)
+pass
+with open('Students_id.json', encoding='UTF-8') as f2:
+    students = json.load(f2)
+pass
 
 teacher = 'Владимир Сергеевич'
 students_of = []
