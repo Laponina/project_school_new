@@ -9,7 +9,7 @@
 import json
 
 
-def get_param(people,**kwargs ):
+def get_param(people, **kwargs):
     result = []
     parametrs = []
     for key in kwargs:
@@ -20,7 +20,7 @@ def get_param(people,**kwargs ):
         else:
             k = el
         for humane in people:
-            if humane[k] == kwargs[el]:
+            if humane[k] == kwargs[el] or kwargs[el] in humane[k]:
                 result.append(humane['id'])
     return result
 
@@ -35,13 +35,12 @@ pass
 
 # parametrs = ['name', 'surname']
 # list_of_people = {'name': 'Иван', 'surname': 'Иванов'}
-people = students
+people = teachers
 
-list_of_id = get_param(people,name='Кузин', class_room = '7 Г' )
-
+list_of_id = get_param(people, class_room="7 В")
 
 list_of_id = list(set(list_of_id))
 
 print(list_of_id)
 
-#Сделать, чтобы можно было работать с классами учителей
+# Сделать, чтобы можно было работать с классами учителей
